@@ -1,0 +1,135 @@
+--game link: https://www.roblox.com/games/7993293100/Tsunami-Game
+
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("ZEROS HUB", "Midnight")
+local Tab = Window:NewTab("Farm")
+local Section = Tab:NewSection("Farm")
+Section:NewButton("Gold 4", "simply gives u diamond Banana to sell not spam", function()
+    local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = CFrame.new(-187.026337, -1966.3446, -20.0445061, -0.0519060977, 2.44600002e-08, 0.998651981, -6.59566837e-08, 1, -2.79211942e-08, -0.998651981, -6.73170533e-08, -0.0519060977)
+task.wait(4)
+local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = CFrame.new(-187.026337, -1966.3446, -20.0445061, -0.0519060977, 2.44600002e-08, 0.998651981, -6.59566837e-08, 1, -2.79211942e-08, -0.998651981, -6.73170533e-08, -0.0519060977)
+task.wait(4)
+local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = CFrame.new(173.713943, -1974.44019, -17.0912476, -0.999841332, 2.13044746e-08, 0.0178123359, 2.08730224e-08, 1, -2.44079743e-08, -0.0178123359, -2.4032305e-08, -0.999841332)
+task.wait(4)
+local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = CFrame.new(173.713943, -1974.44019, -17.0912476, -0.999841332, 2.13044746e-08, 0.0178123359, 2.08730224e-08, 1, -2.44079743e-08, -0.0178123359, -2.4032305e-08, -0.999841332)
+task.wait(4)
+local args = {
+    [1] = "SellChromeBananas",
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Gui.AlienShopEvent:FireServer(unpack(args))
+task.wait(4)
+local args = {
+    [1] = "SellChromeBananas",
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Gui.AlienShopEvent:FireServer(unpack(args))
+end)
+Section:NewButton("Win", "simply brings u to the end", function()
+    local teleport_table = {
+    location1 = Vector3.new(-10.3181286, 119.998016, -964.120239, 0.998805761, -6.20484109e-10, -0.0488579497, 3.12669179e-09, 1, 5.12193736e-08, 0.0488579497, -5.13109697e-08, 0.998805761)
+}
+
+local tween_s = game:GetService("TweenService")
+local tweeninfo = TweenInfo.new(4.4,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function win_teleport(v)
+    if lp.Character and
+   lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart, tweeninfo,{CFrame=cf})
+        a:Play()
+    end
+end
+
+win_teleport(teleport_table.location1)
+task.wait(4.5)
+local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = CFrame.new(-9.77023029, 39.6512947, -1020.92383, -0.999229014, 0.00188827037, -0.0392147042, -8.39696368e-11, 0.998842716, 0.0480963774, 0.0392601416, 0.0480592959, -0.998072624)
+task.wait(2.9)
+local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = CFrame.new(-8.97146702, 123.013748, 934.401245, 0.999955654, -8.16865153e-08, 0.00941667054, 8.17539174e-08, 1, -6.77247991e-09, -0.00941667054, 7.54202922e-09, 0.999955654)
+end)
+Section:NewButton("Spawns tsunami", "this one allows u to spawn a tsunami", function()
+    local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = CFrame.new(-22.5097904, 123.528, 982.667847, 0.0619811937, 5.38871916e-08, -0.998077333, -4.65371652e-09, 1, 5.37020028e-08, 0.998077333, 1.31625477e-09, 0.0619811937)
+task.wait(0.2)
+local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = CFrame.new(159.501801, 125.197731, 676.151917, 0.0582389347, 6.10294606e-08, 0.998302698, 4.49510829e-08, 1, -6.37555786e-08, -0.998302698, 4.85878431e-08, 0.0582389347)
+end)
+local Tab = Window:NewTab("Buy items")
+local Section = Tab:NewSection("Buy Items")
+Section:NewButton("Canoe", "This item costs 175", function()
+    local args = {
+    [1] = "SurvivalShop",
+    [2] = "Canoe"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Gui.ShopItemPurchased:FireServer(unpack(args)
+end)
+Section:NewButton("Trident", "This item costs 200", function()
+    local args = {
+    [1] = "SurvivalShop",
+    [2] = "Trident"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Gui.ShopItemPurchased:FireServer(unpack(args))
+end)
+Section:NewButton("DivingSuit", "This item costs 100", function()
+    local args = {
+    [1] = "SurvivalShop",
+    [2] = "DivingSuit"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Gui.ShopItemPurchased:FireServer(unpack(args))
+end)
+Section:NewButton("Happy home", "This item costs 265", function()
+    local args = {
+    [1] = "SurvivalShop",
+    [2] = "Happy home"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Gui.ShopItemPurchased:FireServer(unpack(args))
+end)
+Section:NewButton("Paddleboard", "This item costs 80", function()
+    local args = {
+    [1] = "SurvivalShop",
+    [2] = "Paddleboard"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Gui.ShopItemPurchased:FireServer(unpack(args))
+end)
+Section:NewButton("ButtonText", "ButtonInfo", function()
+Section:NewButton("Lifeboat", "This item costs 225", function()
+    local args = {
+    [1] = "SurvivalShop",
+    [2] = "Lifeboat"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Gui.ShopItemPurchased:FireServer(unpack(args))
+end)
+Section:NewButton("Anchor", "This item costs 50", function()
+    local args = {
+    [1] = "SurvivalShop",
+    [2] = "Anchor"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Gui.ShopItemPurchased:FireServer(unpack(args))
+end)
+Section:UpdateSection("These items allow u to kill")
+Section:NewButton("Blow dryer", "This item costs 120", function()
+    local args = {
+    [1] = "SurvivalShop",
+    [2] = "Blow dryer"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Gui.ShopItemPurchased:FireServer(unpack(args))
+end)
